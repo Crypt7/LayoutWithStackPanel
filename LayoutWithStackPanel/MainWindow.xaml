@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Your Name " Margin="5"/>
+            <TextBox Width="80" Height="Auto" Background="White"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <TextBlock Text="Your Password" Margin="5"/>
+            <TextBox Width="80" Height="Auto" Background="White"/>
+        </StackPanel>
     </Grid>
 </Window>
